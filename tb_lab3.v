@@ -67,7 +67,7 @@ initial  begin
 	//b is 7
 	B[3:0] = 4'b0111;
 	//c was simulated as 1 but was supposed to be 0 
-	C = 1;
+	C = 0;
 	#10;
 	$display("the result should be equal  010 the res is %b %b %b", F[2], F[1], F[0]);
 end
