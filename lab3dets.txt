@@ -1,0 +1,35 @@
+lab3 setup and summary.
+Tyler Evans u1313811
+
+always allows if statements
+
+init allows time
+
+sensitivity list-> 
+	always@ (var want to watch, var ,var) 
+for twos complement
+
+	compare difference 
+	a-b = ab
+	if ab == 0, then  equal
+		f3 = 0 f2 = 1 f1 = 0
+	if ab < 0, then b is greater
+		f3 = 1 f2 = 0 f1= 0
+	if > 0, then a is greater
+		f3 = 0 f2 = 0 f1 = 1
+
+for signed number
+	
+	compare difference of 3rd bit. 
+
+	if a3> b3, b will be greater
+		f3 = 1 f2 = 0 f1=0 
+	if a3 < b3, a will be greater
+		f3 = 0 f2 = 0 f1 = 1
+	if a3 == b3, same sign
+		if a2..a0 > b2..b0, a is greater
+			f3 = 0 f2 = 0 f1 = 1		
+		if a2..a0 < b2..b0, b is greater
+			f3 = 1 f2 = 0 f1 = 0
+		if a2..a0 == b2..b0, equal
+			f3 = 0 f2 = 1 f1 = 0
